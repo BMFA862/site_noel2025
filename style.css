@@ -22,16 +22,17 @@ body::before {
     pointer-events: none;
 }
 
-.noeltxt{
-    max-width: 100%;
+.noeltxt {
+    max-width: 110%; /* Augmente légèrement la taille */
     height: auto;
     display: block;
 }
 
 .palmier,
 .feux {
-    max-width: 100%;
-    height: auto;
+    width: 100%; /* Assure qu'ils ont la même largeur */
+    max-width: 300px; /* Définit une taille maximale identique */
+    height: auto; /* Maintient les proportions */
     display: block;
 }
 
@@ -40,15 +41,15 @@ body::before {
         flex-direction: column !important;
         align-items: center !important;
     }
-    .noeltxt{
-        width: 80vw;
-        max-width: 400px;
+    .noeltxt {
+        width: 85vw; /* Augmente légèrement la taille */
+        max-width: 450px; /* Taille maximale plus grande */
         margin-bottom: 1rem;
     }
     .palmier,
     .feux {
-        width: 90vw;
-        max-width: 300px;
+        width: 85vw; /* Taille identique pour les deux */
+        max-width: 350px; /* Taille maximale identique */
         margin-bottom: 1rem;
     }
     h1.emojy {
@@ -57,15 +58,15 @@ body::before {
 }
 
 @media (max-width: 480px) {
-    .noeltxt{
-        width: 90vw;
-        max-width: 250px;
+    .noeltxt {
+        width: 95vw; /* Augmente légèrement la taille */
+        max-width: 300px; /* Taille maximale plus grande */
         margin-bottom: 1rem;
     }
     .palmier,
     .feux {
-        width: 95vw;
-        max-width: 200px;
+        width: 95vw; /* Taille identique pour les deux */
+        max-width: 250px; /* Taille maximale identique */
     }
     h1.emojy {
         font-size: 1.5rem;
