@@ -1,0 +1,35 @@
+body {
+    background: url('img/fond\ mer.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.noeltxt{
+    width: 80vh;
+}
+
+.palmier{
+    width: 40vh;
+}
+
+.feux{
+    width: 40vh;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+    pointer-events: none;
+}
+
