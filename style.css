@@ -22,8 +22,13 @@ body::before {
     pointer-events: none;
 }
 
+.noeltxt{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .palmier,
-.noeltxt,
 .feux {
     max-width: 100%;
     height: auto;
@@ -35,8 +40,12 @@ body::before {
         flex-direction: column !important;
         align-items: center !important;
     }
+    .noeltxt{
+        width: 80vw;
+        max-width: 400px;
+        margin-bottom: 1rem;
+    }
     .palmier,
-    .noeltxt,
     .feux {
         width: 90vw;
         max-width: 300px;
@@ -48,8 +57,12 @@ body::before {
 }
 
 @media (max-width: 480px) {
+    .noeltxt{
+        width: 90vw;
+        max-width: 250px;
+        margin-bottom: 1rem;
+    }
     .palmier,
-    .noeltxt,
     .feux {
         width: 95vw;
         max-width: 200px;
