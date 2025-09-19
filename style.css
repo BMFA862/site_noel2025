@@ -5,21 +5,10 @@ body {
     position: relative;
 }
 
-.noeltxt{
-    width: 80vh;
-}
-
-.palmier{
-    width: 40vh;
-}
-
-.feux{
-    width: 40vh;
-}
-
 .content {
     position: relative;
     z-index: 1;
+    padding: 1rem;
 }
 body::before {
     content: "";
@@ -31,5 +20,42 @@ body::before {
     background: rgba(0,0,0,0.5);
     z-index: 0;
     pointer-events: none;
+}
+
+.palmier,
+.noeltxt,
+.feux {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .palmier,
+    .noeltxt,
+    .feux {
+        width: 90vw;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+    h1.emojy {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .palmier,
+    .noeltxt,
+    .feux {
+        width: 95vw;
+        max-width: 200px;
+    }
+    h1.emojy {
+        font-size: 1.5rem;
+    }
 }
 
